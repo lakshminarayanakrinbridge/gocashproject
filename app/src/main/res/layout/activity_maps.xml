@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Search Your Location"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:id="@+id/TFaddress" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/Bsearch"
+            android:layout_gravity="right"
+            android:onClick="onSearch" />
+
+
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingBottom="20dp">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="^"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/Bzoomin"
+            android:onClick="onZoom" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/Bzoomout"
+            android:layout_gravity="center_vertical"
+            android:onClick="onZoom" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+           android:layout_marginLeft="150dp"
+            android:id="@+id/Bsubmit"
+            android:onClick="onClickSubmitbutton" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
+
+
+
+

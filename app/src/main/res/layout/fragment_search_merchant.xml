@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.com.inbridge.ecash24012017.SearchMerchantFragment">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:hint="Search Merchant Name..."
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="14dp"
+        android:background="#d3d3d3"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recyclerview"
+        android:layout_below="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+   >
+<TextView
+    android:id="@+id/welcome_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome Merchant"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textAppearance="?android:textAppearanceLarge"
+    android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/user_textview"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current User"
+       />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dashboard_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:onClick="onClickDashboardButton"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Terminals"
+            android:onClick="onClickTerminalButton"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Terminal"
+            android:onClick="onClickEditterminalButton"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:onClick="onClickMyprofileButton"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.com.inbridge.ecash24012017.AdminDashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADMIN DASHBOARD"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+</FrameLayout>

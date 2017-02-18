@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_merchant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.com.inbridge.ecash24012017.EditMerchantActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Merchant Profile"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/merchantname_edittext"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:hint="Merchant Name"/>
+    <EditText
+        android:id="@+id/merchantkey_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Merchant Key"
+        android:digits="abcdefghijklmopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"/>
+
+    <EditText
+        android:id="@+id/accountname_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:hint="Account Name"/>
+    <EditText
+        android:id="@+id/ifsccode_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="IFSC Code"/>
+    <EditText
+        android:id="@+id/accountnumber_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Account Number"
+        android:digits="1234567890"/>
+    <EditText
+        android:id="@+id/address_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Address"
+        android:inputType="textMultiLine"/>
+    <EditText
+        android:id="@+id/kycdetails_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="KYC Details"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="submit"
+                android:onClick="onClickSubmitbutton"
+
+                />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:text="cancel"
+                android:onClick="onClickCancelbutton"
+                />
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

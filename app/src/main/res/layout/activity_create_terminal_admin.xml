@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_terminal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:layout_gravity="center"
+    tools:context="www.com.inbridge.ecash24012017.CreateTerminal">
+
+    <TextView
+        android:id="@+id/createterminal_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Terminal"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <EditText
+        android:id="@+id/cashiername_edittext"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Cashier Name"/>
+    <EditText
+        android:id="@+id/mobilenumber_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Mobile Number"
+        android:maxLength="10"
+        android:digits="1234567890"/>
+    <EditText
+        android:id="@+id/emailid_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="E-mail Id"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelbutton_button"
+            android:text="Cancel"
+            android:onClick="onClickCancelButton"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitbutton_button"
+            android:text="Submit"
+            android:onClick="onClickSubmitButton"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

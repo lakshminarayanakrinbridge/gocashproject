@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_merchant_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="www.com.inbridge.ecash24012017.MerchantRegistrationActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/merchantregistration_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merchant Registration"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <EditText
+        android:id="@+id/merchantname_edittext"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:hint="Merchant Name"/>
+    <EditText
+        android:id="@+id/merchantkey_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:digits="abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"
+        android:hint="Merchant Key"/>
+
+     <TextView
+         android:id="@+id/mobilenumber_textview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:text="Mobile Number"
+         android:textSize="18dp"
+         android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/emailid_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Email-id"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <EditText
+        android:id="@+id/accountname_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Account Name"/>
+    <EditText
+        android:id="@+id/ifsccode_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="IFSC Code"/>
+    <EditText
+        android:id="@+id/accountnumber_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Account Number"
+        android:digits="1234567890"/>
+    <EditText
+        android:id="@+id/address_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Address"
+        android:inputType="textMultiLine"/>
+    <EditText
+        android:id="@+id/kycdetails_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="KYC Details"/>
+    <Button
+        android:id="@+id/latlong_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:text="Get latitude and longitude"
+        android:onClick="onClickGetlatitudelongitudebutton"/>
+    <Button
+        android:id="@+id/profileimg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:text="upload profile image"
+        android:onClick="onClickUploadprofileimagebutton"/>
+            <Button
+                android:id="@+id/createterminal1_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="Create Terminal 1"
+                android:onClick="onClickCreateterminal"/>
+
+            <Button
+                android:id="@+id/createterminal2_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="Create Terminal 2"
+                android:onClick="onClickCreateterminal1"/>
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:text="submit"
+        android:onClick="onClickSubmitbutton"
+
+        />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="cancel"
+                android:onClick="onClickCancelbutton"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

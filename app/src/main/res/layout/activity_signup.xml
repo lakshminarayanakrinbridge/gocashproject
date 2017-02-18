@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.com.inbridge.ecash24012017.SignupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merchant Registration"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobilenumber_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:hint="Mobile Number"
+        android:gravity="center"
+        android:maxLength="10"
+        android:digits="1234567890"
+        />
+
+    <EditText
+        android:id="@+id/emailaddress_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:hint="E-mail Id"
+        android:gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNextbutton"/>
+
+
+</LinearLayout>

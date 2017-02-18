@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.com.inbridge.ecash24012017.DashboardActivity">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/welcometext_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Merchant"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

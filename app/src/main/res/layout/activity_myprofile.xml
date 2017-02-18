@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_myprofile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="www.com.inbridge.ecash24012017.MyprofileActivity">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Merchant Profile"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/mcategory_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merchant Name"
+           android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mkey_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merchant Key"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/memail_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail Id"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mmobile_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/maccountname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Name"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/maccountnumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/maddress_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mifsc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mkyc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KYC Details"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:onClick="onClickEditMerchantButton"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:onClick="onClickOkButton"/>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
