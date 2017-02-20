@@ -1,9 +1,15 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#FFFFFF"
-    tools:context="www.com.inbridge.ecash24012017.SearchMerchantFragment">
+    tools:context="www.com.inbridge.ecash24012017.AdminMerchantTerminalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <EditText
         android:id="@+id/search"
@@ -13,7 +19,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:textSize="16sp"
-        android:hint="Search Merchant Name..."
+        android:hint="Search Terminal Name..."
         android:layout_marginTop="20dp" />
 
     <View
@@ -24,12 +30,14 @@
         android:layout_marginTop="14dp"
         android:background="#d3d3d3"/>
 
+
+
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/search_recyclerview"
-        android:layout_below="@+id/border"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:id="@+id/terminal_recyclerview"
 
-    </android.support.v7.widget.RecyclerView>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
-</RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

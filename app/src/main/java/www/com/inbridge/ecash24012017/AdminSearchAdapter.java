@@ -1,12 +1,15 @@
 package www.com.inbridge.ecash24012017;
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import android.content.SharedPreferences;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,66 +49,28 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
         holder.textmerchantname.setText(data.merchantnameter);
         holder.textcategory.setText(data.categoryter);
         holder.ecashbalance.setText(data.ecashbalanceter);
-       /* holder.textview.setOnClickListener(new View.OnClickListener() {
+        holder.textview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
                 AdminTerminalList data = admindata.get(position);
                 strcode = data.merchantcodeter;
+                Config.newstr=strcode;
                 Toast.makeText(view.getContext(), data.merchantcodeter, Toast.LENGTH_LONG).show();
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.APPROVED_URL,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                //If we are getting success from server
-                                Toast.makeText(view.getContext(), response, Toast.LENGTH_LONG).show();
+                android.app.Fragment fragment=new AdminMerchantTerminalFragment();
+                final Context context = view.getContext();
+                SharedPreferences sharedPreferences=view.getContext().getSharedPreferences(Config.SHARED_PREF_NAME,Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putString(Config.KEY_MERCHANTID,strcode);
+                    editor.commit();
+               FragmentManager fm = ((Activity) context).getFragmentManager();
+                fm.beginTransaction().replace(R.id.content_frame,fragment).commit();
 
 
-                                JSONObject jsonObject;
-                                String string = null;
-                                String boolval = null;
-                                try {
-                                    jsonObject = new JSONObject(response);
-                                    string = jsonObject.getString("user_msg");
-                                    boolval = jsonObject.getString("success");
-
-                                    if (boolval.equalsIgnoreCase("TRUE")) {
-                                        Toast.makeText(view.getContext(), string, Toast.LENGTH_LONG).show();
-
-                                    } else {
-                                        Toast.makeText(view.getContext(), string, Toast.LENGTH_LONG).show();
-                                    }
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-
-
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                //You can handle error here if you want
-                            }
-                        }) {
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> params = new HashMap<>();
-
-                        params.put("m_id",strcode);
-                        //returning parameter
-                        return params;
-                    }
-                };
-
-                //Adding the string request to the queue
-                RequestQueue requestQueue = Volley.newRequestQueue(view.getContext());
-                requestQueue.add(stringRequest);
 
             }
         });
 
-        holder.textedit.setOnClickListener(new View.OnClickListener() {
+        /*holder.textedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
                 AdminTerminalList data = admindata.get(position);
@@ -196,10 +161,6 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
         }
     }
 
-    public static class MyFragment extends Fragment
-    {
 
-
-    }
 }
 

@@ -95,7 +95,7 @@ public class Config {
     public static final String EMAILID_SHARED_PREF="emailid";
 
 
-
+        public static  String newstr=null;
 
 
 
