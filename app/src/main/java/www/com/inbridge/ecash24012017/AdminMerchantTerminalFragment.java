@@ -63,7 +63,7 @@ public class AdminMerchantTerminalFragment extends android.app.Fragment {
         recyclerView=(RecyclerView) layout.findViewById(R.id.terminal_recyclerview);
         searchtext= (EditText) layout.findViewById(search);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.TERMINALLIST_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.ADMIN_TERMINAL_LIST_URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -77,7 +77,7 @@ public class AdminMerchantTerminalFragment extends android.app.Fragment {
                             jsonArray = jsonObject.getJSONArray("tlist");
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject terminal = jsonArray.getJSONObject(i);
-                                TerminalDataProvider adminData = new TerminalDataProvider(terminal.getString("tname"), terminal.getString("tnum"), terminal.getString("temail"),terminal.getString("tcode"));
+                                TerminalDataProvider adminData = new TerminalDataProvider(terminal.getString("cashier_name"), terminal.getString("t_mobileNo"), terminal.getString("t_email"),terminal.getString("terminal_code"));
                                 information.add(adminData);
                                 Log.e("value", Integer.toString(information.size()));
 

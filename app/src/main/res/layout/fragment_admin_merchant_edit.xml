@@ -1,0 +1,209 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="www.com.inbridge.ecash24012017.AdminMerchantEditFragment">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Merchant"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"/>
+
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cat_textview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="category"/>
+            <EditText
+                android:id="@+id/merchantname_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:hint="Merchant Name"/>
+            <EditText
+                android:id="@+id/merchantkey_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="Merchant Key"
+                android:digits="abcdefghijklmopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"/>
+
+            <TextView
+                android:id="@+id/mobilenumber_textview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Mobile Number"/>
+
+            <TextView
+                android:id="@+id/emailid_textview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="E-mail Id"/>
+
+
+
+            <EditText
+                android:id="@+id/accountname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:hint="Account Name"/>
+            <EditText
+                android:id="@+id/ifsccode_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="IFSC Code"/>
+            <EditText
+                android:id="@+id/accountnumber_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="Account Number"
+                android:digits="1234567890"/>
+            <EditText
+                android:id="@+id/ecashbal_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:hint="E-Cash Balance"/>
+            <EditText
+                android:id="@+id/ecashcashback_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:hint="E - CashBack Balance"/>
+            <EditText
+                android:id="@+id/address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="Address"
+                android:inputType="textMultiLine"/>
+            <EditText
+                android:id="@+id/lat_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"/>
+            <EditText
+                android:id="@+id/lng_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"/>
+            <EditText
+                android:id="@+id/kycdetails_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="KYC Details"/>
+            <TextView
+                android:id="@+id/approvedStatus_textview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+               android:text="Approved Status"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="submit"
+                android:onClick="onClickSubmitbutton"
+
+                />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:text="cancel"
+                android:onClick="onClickCancelbutton"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

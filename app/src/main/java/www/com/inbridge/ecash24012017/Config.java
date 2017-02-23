@@ -25,10 +25,18 @@ public class Config {
 
     public static final String ADMIN_LIST_MERCHANT_URL =URL+"admin_merchant_list.php";
 
+    public static final String ADMIN_MERCHANT_URL=URL+"admin_merchant_details.php";
+
 
     public static final String ADDTERMINAL_URL=URL+"addTerminal.php";
 
     public static final String TERMINALLIST_URL=URL+"TerminalList.php";
+
+    public static final String ADMIN_TERMINAL_LIST_URL=URL+"admin_terminal_list.php";
+
+    public static final String ADMIN_MERCHANT_UPDATE_URL=URL+"admin_update_merchant.php";
+
+
 
 
     public static final String UPDATETERMINALLIST_URL=URL+"update_terminal.php";
@@ -93,6 +101,11 @@ public class Config {
     public static final String CATEGORY_SHARED_PREF="mcategory";
     public static final String MOBILENUMBER_SHARED_PREF="mobilenumber";
     public static final String EMAILID_SHARED_PREF="emailid";
+    public static final String APPROVAL_STATUS="approvalstatus";
+    public static final String LAT_SHARED_PREF="lat";
+    public static final String LNG_SHARED_PREF="lng";
+    public static final String ECASH_CASH_BAL_SHARED_PREF="cashbal";
+    public static final String ECASH_CASH_BACK_BAL_SHARED_PREF="cashbackbal";
 
 
         public static  String newstr=null;
