@@ -26,6 +26,8 @@
         android:layout_alignParentBottom="true"
         android:text="Terminal\n\nAdd New"
         android:onClick="onClickAddnewterminalButton"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         />
 
 </RelativeLayout>

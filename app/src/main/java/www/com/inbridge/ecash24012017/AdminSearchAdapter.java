@@ -76,7 +76,7 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
                 editor.putString(Config.KEY_MERCHANTID,strcode);
                     editor.commit();
                android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
-               fm.beginTransaction().replace(R.id.content_frame,fragment).commit();
+               fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
 
           
 
@@ -129,7 +129,7 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
                                         e.commit();
                                         Fragment fragment=new AdminMerchantEditFragment();
                                         android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
-                                        fm.beginTransaction().replace(R.id.content_frame,fragment).commit();
+                                        fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
 
 
                                     } else {

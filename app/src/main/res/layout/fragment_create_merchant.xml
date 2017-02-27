@@ -150,7 +150,9 @@
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
                 android:text="upload profile image"
-                android:onClick="onClickUploadprofileimagebutton"/>
+                android:onClick="onClickUploadprofileimagebutton"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"/>
 
             <Button
                 android:id="@+id/submit_button"
@@ -162,6 +164,8 @@
                 android:textAlignment="center"
                 android:text="submit"
                 android:onClick="onClickSubmitbutton"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"
 
                 />
             <Button
@@ -174,6 +178,8 @@
                 android:textAlignment="center"
                 android:text="cancel"
                 android:onClick="onClickCancelbutton"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"
                 />
 
 

@@ -20,13 +20,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cashier Name"/>
+            android:text="Cashier Name"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/cashiername_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:text="User_1"/>
+            android:text="User_1"
+            android:textColor="#000000"/>
 
     </LinearLayout>
     <LinearLayout
@@ -41,13 +44,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mobile Number"/>
+            android:text="Mobile Number"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/mobilenumber_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="User_1"/>
+            android:text="User_1"
+            android:textColor="#000000"/>
 
     </LinearLayout>
     <LinearLayout
@@ -62,13 +68,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-Mail Id"/>
+            android:text="E-Mail Id"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/emailid_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="71dp"
-            android:text="User_1"/>
+            android:text="User_1"
+            android:textColor="#000000"/>
 
     </LinearLayout>
     <LinearLayout
@@ -83,13 +92,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Terminal Id"/>
+            android:text="Terminal Id"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/terminalid_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="56dp"
-
+            android:textColor="#000000"
             android:text="User_1"/>
 
     </LinearLayout>

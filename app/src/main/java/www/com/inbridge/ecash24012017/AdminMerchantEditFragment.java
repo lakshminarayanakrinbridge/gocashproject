@@ -1,6 +1,8 @@
 package www.com.inbridge.ecash24012017;
 
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -41,6 +43,8 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
     }
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -64,6 +68,8 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
         final EditText address=(EditText) view.findViewById(R.id.address_edittext);
 
         Button btn=(Button)view.findViewById(R.id.submit_button);
+        Button btn_cancel=(Button) view.findViewById(R.id.cancel_button);
+
 
 
 
@@ -104,10 +110,21 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
         cashbackbal.setText(mcashbackbal);
         address.setText(maddr);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn_cancel.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), name.getText().toString().trim(),Toast.LENGTH_LONG).show();
+                Fragment fragment=new SearchMerchantFragment();
+                FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
+                //fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
+
+            }
+        } );
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                Toast.makeText(getActivity(), mid,Toast.LENGTH_LONG).show();
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.ADMIN_MERCHANT_UPDATE_URL,
                         new Response.Listener<String>() {
@@ -127,6 +144,10 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
 
                                     if (boolval.equalsIgnoreCase("TRUE")) {
                                         Toast.makeText(getActivity(), string, Toast.LENGTH_LONG).show();
+
+                                      /*  Fragment fragment=new SearchMerchantFragment();
+                                     FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
+                                        //fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();*/
 
 
 
@@ -151,7 +172,7 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String, String> params = new HashMap<>();
 
-                        params.put("m_id",mid);
+                        params.put("m_code",mid);
                         params.put("m_key",key.getText().toString().trim());
                         params.put("m_name",name.getText().toString().trim());
                         params.put("m_acc_name",accname.getText().toString().trim());

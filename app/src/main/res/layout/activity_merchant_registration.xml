@@ -130,6 +130,8 @@
         android:layout_marginRight="10dp"
         android:textAlignment="center"
         android:text="Get latitude and longitude"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:onClick="onClickGetlatitudelongitudebutton"/>
     <Button
         android:id="@+id/profileimg_button"
@@ -139,6 +141,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:text="upload profile image"
         android:onClick="onClickUploadprofileimagebutton"/>
             <Button
@@ -149,6 +153,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"
                 android:text="Create Terminal 1"
                 android:onClick="onClickCreateterminal"/>
 
@@ -160,6 +166,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"
                 android:text="Create Terminal 2"
                 android:onClick="onClickCreateterminal1"/>
     <Button
@@ -170,6 +178,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:text="submit"
         android:onClick="onClickSubmitbutton"
 
@@ -181,8 +191,11 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 android:textAlignment="center"
                 android:text="cancel"
+                android:background="@color/colorButton"
+                android:textColor="#FFFFFF"
                 android:onClick="onClickCancelbutton"
                 />
 

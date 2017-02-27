@@ -6,7 +6,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:orientation="vertical"
-
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
    >
 <TextView
@@ -16,6 +15,7 @@
     android:text="Welcome Merchant"
     android:layout_gravity="center"
     android:textStyle="bold"
+    android:textColor="@color/colorText"
     android:textAppearance="?android:textAppearanceLarge"
     android:layout_marginTop="10dp"/>
 
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorText"
         android:text="Current User"
        />
 
@@ -43,28 +44,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dashboard"
-            android:onClick="onClickDashboardButton"/>
+            android:onClick="onClickDashboardButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View Terminals"
-            android:onClick="onClickTerminalButton"/>
+            android:onClick="onClickTerminalButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Edit Terminal"
-            android:onClick="onClickEditterminalButton"/>
+            android:onClick="onClickEditterminalButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="My Profile"
-            android:onClick="onClickMyprofileButton"/>
+            android:onClick="onClickMyprofileButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
 
 

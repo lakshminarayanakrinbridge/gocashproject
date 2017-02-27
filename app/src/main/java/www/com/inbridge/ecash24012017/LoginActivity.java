@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,12 +34,15 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private TextView newtoecashTextView;
     private TextView forgotpasswordTextView;
+    private ProgressBar progressBar;
     private boolean loggedIn = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        progressBar=(ProgressBar)findViewById(R.id.pbHeaderProgress);
+        progressBar.setVisibility(View.INVISIBLE);
 
 
     }
@@ -50,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
         usernameEditText = (EditText) findViewById(R.id.username_edittext);
         passwordEditText = (EditText) findViewById(R.id.password_edittext);
         loginButton = (Button) findViewById(R.id.login_button);
+        progressBar=(ProgressBar)findViewById(R.id.pbHeaderProgress);
+
         final String username = usernameEditText.getText().toString();
         final String password = passwordEditText.getText().toString();
 
@@ -72,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this,"Please Enter The Correct Mobile Number",Toast.LENGTH_LONG).show();
         }
         else {
-
+            progressBar.setVisibility(View.VISIBLE);
             StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.LOGIN_URL,
                     new Response.Listener<String>() {
                         @Override
@@ -87,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                             String str8=null;
                             String str9=null;
                             String str11=null;
-                            String str12=null;
+                            String str12="false";
 
 
                             try {
@@ -114,6 +120,7 @@ public class LoginActivity extends AppCompatActivity {
                             catch (JSONException e)
                             {
                                 e.printStackTrace();
+                                progressBar.setVisibility(View.GONE);
                                 Toast.makeText(getApplicationContext(),"Developer Exception 1",Toast.LENGTH_LONG).show();
                             }
 
@@ -162,15 +169,17 @@ public class LoginActivity extends AppCompatActivity {
                                 // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.USERNAME_SHARED_PREF,"username"),Toast.LENGTH_LONG).show();
                                 // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.ACCOUNT_NAME_SHARED_PREF,"aname"),Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                                progressBar.setVisibility(View.GONE);
                                 startActivity(intent);
                                 finish();
                             }
-                                else  if(str11.equals("admin"))
+                                else // if(str11.equals("admin"))
                             {
 
 
 
                                     Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
+                                progressBar.setVisibility(View.GONE);
                                     startActivity(intent);
                                     finish();
 
@@ -184,6 +193,7 @@ public class LoginActivity extends AppCompatActivity {
                                 //If the server response is not success
                                 //Displaying an error message on toast
                                 Toast.makeText(LoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.INVISIBLE);
                             }
                             //Starting profile activity
 
@@ -218,6 +228,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent(LoginActivity.this, SignupActivity.class);
         startActivity(i);
         finish();
+
 
     }
 

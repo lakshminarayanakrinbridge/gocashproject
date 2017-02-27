@@ -13,7 +13,7 @@
         android:id="@+id/createterminal_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Terminal"
+        android:text="Edit Terminal"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textAppearance="?android:textAppearanceLarge"
@@ -61,6 +61,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/cancelbutton_button"
             android:text="Cancel"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onClickCancelButton"/>
 
         <Button
@@ -70,6 +72,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/submitbutton_button"
             android:text="Submit"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onClickSubmitButton"/>
 
 

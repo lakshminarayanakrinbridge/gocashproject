@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:text="Forgot Password? Click here"
         android:layout_gravity="center"
+        android:textColor="@color/colorText"
         android:onClick="onClickForgotPassword"
         />
     <Button
@@ -58,8 +59,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Login"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:onClick="onClickLogin"
         />
+
+
     <TextView
         android:id="@+id/newtoecash_textview"
         android:layout_marginTop="30dp"
@@ -67,8 +72,17 @@
         android:layout_height="wrap_content"
         android:text="New to eCash? Register here"
         android:onClick="onClickNewtoEcash"
+        android:textColor="@color/colorText"
         android:layout_gravity="center"/>
-
+    <ProgressBar
+        android:id="@+id/pbHeaderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_gravity="center"
+        >
+    </ProgressBar>
 
 
 

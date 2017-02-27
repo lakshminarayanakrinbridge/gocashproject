@@ -103,6 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="EDIT"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onClickEditMerchantButton"/>
 
         <Button
@@ -112,6 +114,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ok"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onClickOkButton"/>
 
 

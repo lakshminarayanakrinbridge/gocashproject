@@ -55,7 +55,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/cancelbutton_button"
             android:text="Cancel"
-            android:onClick="onClickCancelButton"/>
+            android:onClick="onClickCancelButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:layout_width="100dp"
@@ -64,7 +66,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/submitbutton_button"
             android:text="Submit"
-            android:onClick="onClickSubmitButton"/>
+            android:onClick="onClickSubmitButton"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"/>
 
 
 

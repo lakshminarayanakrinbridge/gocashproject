@@ -3,11 +3,7 @@
     android:orientation="vertical"
     android:id="@+id/id9"
     android:layout_width="match_parent" android:layout_height="wrap_content">
-    <View
-        android:id="@+id/id1"
-        android:layout_width="match_parent"
-        android:background="#000000"
-        android:layout_height="2dp"/>
+
     <LinearLayout
         android:id="@+id/id2"
         android:orientation="vertical"
@@ -24,13 +20,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Merchant Code:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/merchantcode_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="user_merchantcode"
+            android:textColor="#000000"
             android:textSize="18dp"
            />
     </LinearLayout>
@@ -51,6 +50,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Merchant Category:"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
@@ -58,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="user_merchantcategory"
+            android:textColor="#000000"
             android:textSize="18dp"
             />
     </LinearLayout>
@@ -79,6 +81,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Merchant Name:"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
@@ -86,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="user_merchantname"
+            android:textColor="#000000"
             android:textSize="18dp"
             />
     </LinearLayout>
@@ -102,7 +107,7 @@
         android:background="#000000"
         android:id="@+id/id7"
         android:layout_width="match_parent"
-        android:layout_height="2dp"/>
+        android:layout_height="1dp"/>
 
 
 </LinearLayout>

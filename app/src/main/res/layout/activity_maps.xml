@@ -34,6 +34,8 @@
             android:text="Search"
             android:id="@+id/Bsearch"
             android:layout_gravity="right"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onSearch" />
 
 
@@ -74,6 +76,8 @@
             android:text="submit"
            android:layout_marginLeft="150dp"
             android:id="@+id/Bsubmit"
+            android:background="@color/colorButton"
+            android:textColor="#FFFFFF"
             android:onClick="onClickSubmitbutton" />
 
     </LinearLayout>

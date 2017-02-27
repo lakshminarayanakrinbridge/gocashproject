@@ -42,6 +42,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="NEXT"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:onClick="onClickNextotpbutton"/>
 
     <Button
@@ -52,6 +54,8 @@
         android:layout_gravity="center_horizontal"
         android:text="Resend otp"
         android:visibility="invisible"
+        android:background="@color/colorButton"
+        android:textColor="#FFFFFF"
         android:onClick="onClickresendotpbutton"/>
 
 </LinearLayout>
