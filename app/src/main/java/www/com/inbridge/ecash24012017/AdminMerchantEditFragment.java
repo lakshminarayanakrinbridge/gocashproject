@@ -131,7 +131,7 @@ public class AdminMerchantEditFragment extends android.app.Fragment {
                             @Override
                             public void onResponse(String response) {
                                 //If we are getting success from server
-                                Toast.makeText(getActivity(), response, Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getActivity(), response, Toast.LENGTH_LONG).show();
 
 
                                 JSONObject jsonObject;

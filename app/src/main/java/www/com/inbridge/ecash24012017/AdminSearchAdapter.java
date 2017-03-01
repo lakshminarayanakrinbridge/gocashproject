@@ -78,6 +78,7 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
                android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
                fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
 
+
           
 
 
@@ -97,7 +98,7 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
                             @Override
                             public void onResponse(String response) {
                                 //If we are getting success from server
-                                Toast.makeText(view.getContext(), response, Toast.LENGTH_LONG).show();
+                               // Toast.makeText(view.getContext(), response, Toast.LENGTH_LONG).show();
 
 
                                 JSONObject jsonObject;

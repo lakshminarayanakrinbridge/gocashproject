@@ -139,15 +139,23 @@ public class CreateMerchantFragment extends Fragment {
 
 
         Button submitButton=(Button) v.findViewById(R.id.submit_button);
+        Button btn_cancel=(Button) v.findViewById(R.id.cancel_button);
+
+        btn_cancel.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager=getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame,new AdminDashboardFragment()).commit();
+            }
+        });
+
+
+
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
-
-
-
                if(mobilenumberEdittext.getText().toString().trim().equals("")) {
                     mobilenumberEdittext.setError("Mobile Number Required");
                     mobilenumberEdittext.setHint("Please Enter The Mobile Number");
