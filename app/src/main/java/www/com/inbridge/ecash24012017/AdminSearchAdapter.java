@@ -88,6 +88,10 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
         holder.textedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
+                /*Fragment fragment=new AdminMerchantEditFragment();
+                android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
+                fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();*/
+
                 AdminTerminalList data = admindata.get(position);
                 strcode = data.merchantcodeter;
                 Toast.makeText(view.getContext(), data.merchantcodeter, Toast.LENGTH_LONG).show();
@@ -128,11 +132,11 @@ public class AdminSearchAdapter extends RecyclerView.Adapter<AdminSearchAdapter.
                                         e.putString(Config.IFSCCODE_SHARED_PREF,jsonObject.getString("m_ifsc"));
                                         e.putString(Config.CATEGORY_SHARED_PREF,jsonObject.getString("cat_name"));
                                         e.commit();
-                                        Fragment fragment=new AdminMerchantEditFragment();
-                                        android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
-                                        fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
 
-
+                                        AdminMerchantEditFragment fragment=new AdminMerchantEditFragment();
+                                       // android.app.FragmentManager fm = ((Activity)view.getContext()).getFragmentManager();
+                                       // fm.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack(null).commit();
+                                        ((Activity)view.getContext()).getFragmentManager().beginTransaction().replace(R.id.content_frame,fragment).commit();
                                     } else {
                                         Toast.makeText(view.getContext(), string, Toast.LENGTH_LONG).show();
                                     }
