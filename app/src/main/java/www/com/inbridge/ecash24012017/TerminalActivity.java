@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -40,14 +41,15 @@ public class TerminalActivity extends AppCompatActivity {
         listView=(ListView)findViewById(R.id.list_view);
         terminalAdapter=new TerminalAdapter(getApplicationContext(),R.layout.terminal_layout);
         listView.setAdapter(terminalAdapter);
-
+        SharedPreferences sharedPreferences=TerminalActivity.this.getSharedPreferences(Config.SHARED_PREF_NAME,MODE_PRIVATE);
+            Toast.makeText(getApplicationContext(),sharedPreferences.getString(Config.MERCHANT_CODE_SHARED_PREF,"mcode"),Toast.LENGTH_LONG).show();
 
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST,Config.TERMINALLIST_URL,new Response.Listener<String>(){
 
             @Override
             public void onResponse(String response) {
-                //Toast.makeText(CreateTerminalAdmin.this,response,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),response, Toast.LENGTH_LONG).show();
                 JSONArray jsonArray;
                 JSONObject jsonObject;
                 try {
@@ -84,7 +86,7 @@ public class TerminalActivity extends AppCompatActivity {
                 SharedPreferences sharedPreferences=TerminalActivity.this.getSharedPreferences(Config.SHARED_PREF_NAME,MODE_PRIVATE);
 
 
-                params.put(Config.MERCHANTID_SHARED_PREF,sharedPreferences.getString(Config.KEY_MERCHANTID,"m_id"));
+                params.put(Config.KEY_MERCHANT_CODE,sharedPreferences.getString(Config.MERCHANT_CODE_SHARED_PREF,"mcode"));
                 return params;
 
             }

@@ -136,6 +136,7 @@ public class LoginActivity extends AppCompatActivity {
                                     str8 = jsonObject1.getString("m_address");
                                     str9 = jsonObject1.getString("kyc_details");
                                     str10 = jsonObject1.getString("m_name");
+                                    str11 =jsonObject1.getString("m_code");
 
 
                                 } catch (JSONException e) {
@@ -162,6 +163,7 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.putString(Config.KEY_MERCHANTID, str);
                                 editor.putString(Config.MOBILENUMBER_SHARED_PREF, username);
                                 editor.putString(Config.EMAILID_SHARED_PREF, "emailid");
+                                editor.putString(Config.MERCHANT_CODE_SHARED_PREF,str11);
 
 
                                 //Saving values to editor

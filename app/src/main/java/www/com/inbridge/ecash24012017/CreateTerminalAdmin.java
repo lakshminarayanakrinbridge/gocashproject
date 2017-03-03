@@ -121,7 +121,7 @@ public class CreateTerminalAdmin extends AppCompatActivity {
                     params.put(Config.terminalname_shared_pref, tname_edittext);
                     params.put(Config.terminalmobile_shared_pref, tmobile_edittext);
                     params.put(Config.terminalemail_shared_pref, temail_edittext);
-                    params.put(Config.MERCHANTID_SHARED_PREF, sharedPreferences.getString(Config.KEY_MERCHANTID, "m_id"));
+                    params.put(Config.KEY_MERCHANT_CODE, sharedPreferences.getString(Config.MERCHANT_CODE_SHARED_PREF, "mcode"));
                     return params;
 
                 }

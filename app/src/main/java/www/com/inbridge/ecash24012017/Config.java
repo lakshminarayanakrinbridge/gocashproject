@@ -28,7 +28,7 @@ public class Config {
     public static final String ADMIN_MERCHANT_URL=URL+"admin_merchant_details.php";
 
 
-    public static final String ADDTERMINAL_URL=URL+"addTerminal.php";
+    public static final String ADDTERMINAL_URL=URL+"insert_terminal.php";
 
     public static final String TERMINALLIST_URL=URL+"TerminalList.php";
 
@@ -106,6 +106,8 @@ public class Config {
     public static final String LNG_SHARED_PREF="lng";
     public static final String ECASH_CASH_BAL_SHARED_PREF="cashbal";
     public static final String ECASH_CASH_BACK_BAL_SHARED_PREF="cashbackbal";
+    public static final String MERCHANT_CODE_SHARED_PREF="mcode";
+    public static final String KEY_MERCHANT_CODE="m_code";
 
 
         public static  String newstr=null;
