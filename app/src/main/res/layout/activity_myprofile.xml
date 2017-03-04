@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:layout_marginLeft="30dp"
+        android:gravity="left">
         <TextView
             android:layout_marginTop="10dp"
             android:id="@+id/mcategory_textview"
@@ -96,7 +97,11 @@
             android:text="KYC Details"
             android:textSize="18dp"
             android:layout_marginBottom="10dp"/>
-
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
             android:layout_marginTop="20dp"
             android:id="@+id/edit_button"

@@ -93,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                             String str8=null;
                             String str9=null;
                             String str11=null;
+                            String str13=null;
                             String str12="false";
 
 
@@ -137,6 +138,10 @@ public class LoginActivity extends AppCompatActivity {
                                     str9 = jsonObject1.getString("kyc_details");
                                     str10 = jsonObject1.getString("m_name");
                                     str11 =jsonObject1.getString("m_code");
+                                    /*
+                                    str13=jsonObject1.getString("m_email");
+                                    str14=jsonObject1.getString("m_mobile");
+                                    */
 
 
                                 } catch (JSONException e) {
