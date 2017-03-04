@@ -21,198 +21,222 @@
         android:layout_height="wrap_content">
 
 
+    </ScrollView>
 
     <LinearLayout
 
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:weightSum="1">
 
         <TextView
             android:id="@+id/cat_textview"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="category"
             android:textAlignment="center"
-            android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:hint="category"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/merchantkey_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:digits="abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"
             android:hint="Merchant Key"
-            android:digits="abcdefghijklmopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"/>
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/emailid_textview"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="E-mail Id"
             android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:text="E-mail Id"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/merchantname_edittext"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Merchant Name"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/accountnumber_edittext"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Merchant Name"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:digits="1234567890"
+            android:hint="Account Number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/mobilenumber_textview"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Mobile Number"
             android:textAlignment="center"
-            android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="Mobile Number"/>
+            android:textStyle="bold" />
 
 
         <EditText
             android:id="@+id/accountname_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Account Name"
             android:textAlignment="center"
-            android:textSize="20dp"
-            android:hint="Account Name"/>
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/ifsccode_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
-            android:hint="IFSC Code"/>
-        <EditText
-            android:id="@+id/accountnumber_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textAlignment="center"
-            android:hint="Account Number"
-            android:digits="1234567890"/>
+            android:background="@drawable/rounded_edittext"
+            android:hint="IFSC Code"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/ecashbal_edittext"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
+            android:layout_weight="1.05"
+            android:background="@drawable/rounded_edittext"
             android:hint="E-Cash Balance"
-            android:layout_weight="1.05" />
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/ecashcashback_edittext"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:hint="E - CashBack Balance"/>
+            android:background="@drawable/rounded_edittext"
+            android:hint="E - CashBack Balance"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/address_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Address"
-            android:inputType="textMultiLine"/>
+            android:inputType="textMultiLine"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/lat_edittext"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:hint="Latitude"/>
+            android:background="@drawable/rounded_edittext"
+            android:hint="Latitude"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/lng_edittext"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:hint="Longitude"/>
+            android:background="@drawable/rounded_edittext"
+            android:hint="Longitude"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/kycdetails_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
-            android:hint="KYC Details"/>
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="KYC Details"
+            android:textAlignment="center" />
+
         <TextView
             android:id="@+id/approvedStatus_textview"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Approved Status"
             android:textAlignment="center"
-            android:layout_height="wrap_content"
-           android:text="Approved Status"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
-            android:text="submit"
-            android:onClick="onClickSubmitbutton"
+            android:layout_marginTop="20dp"
             android:background="@color/colorButton"
+            android:onClick="onClickSubmitbutton"
+            android:text="submit"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
 
             />
+
         <Button
             android:id="@+id/cancel_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center"
-            android:text="cancel"
-            android:onClick="onClickCancelbutton"
+            android:layout_marginTop="20dp"
             android:background="@color/colorButton"
-            android:textColor="#FFFFFF"
-            />
+            android:onClick="onClickCancelbutton"
+            android:text="cancel"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
-    </ScrollView>
 </FrameLayout>

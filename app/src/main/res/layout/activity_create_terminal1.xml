@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:hint="Cashier Name"/>
+        android:hint="Cashier Name"
+        android:background="@drawable/rounded_edittext"/>
     <EditText
         android:id="@+id/mobilenumber_edittext"
         android:layout_marginTop="20dp"
@@ -34,14 +35,16 @@
         android:textAlignment="center"
         android:hint="Mobile Number"
         android:maxLength="10"
-        android:digits="1234567890"/>
+        android:digits="1234567890"
+        android:background="@drawable/rounded_edittext"/>
     <EditText
         android:id="@+id/emailid_edittext"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:hint="E-mail Id"/>
+        android:hint="E-mail Id"
+        android:background="@drawable/rounded_edittext"/>
     <LinearLayout
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
@@ -57,7 +60,8 @@
             android:text="Cancel"
             android:onClick="onClickCancelButton"
             android:background="@color/colorButton"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            />
 
         <Button
             android:layout_width="100dp"

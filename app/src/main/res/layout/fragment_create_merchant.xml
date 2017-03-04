@@ -39,6 +39,7 @@
                 android:layout_marginTop="20dp"
                 android:textAlignment="center"
                 android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
                 android:hint="Merchant Name"
                 />
             <EditText
@@ -49,6 +50,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:digits="abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"
                 android:hint="Merchant Key"/>
             <EditText
@@ -60,6 +62,7 @@
                 android:textAlignment="center"
                 android:layout_height="wrap_content"
                 android:hint="Mobile Number"
+                android:background="@drawable/rounded_edittext"
                 android:maxLength="10"
                 android:digits="1234567890"/>
             <EditText
@@ -69,6 +72,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_edittext"
                 android:textAlignment="center"
 
                 android:hint="Merchant E-mail"/>
@@ -82,6 +86,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:hint="Account Name"/>
             <EditText
                 android:id="@+id/ifsccode_edittext"
@@ -91,6 +96,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:hint="IFSC Code"/>
             <EditText
                 android:id="@+id/accountnumber_edittext"
@@ -101,6 +107,7 @@
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
                 android:hint="Account Number"
+                android:background="@drawable/rounded_edittext"
                 android:digits="1234567890"/>
             <EditText
                 android:id="@+id/address_edittext"
@@ -111,6 +118,7 @@
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
                 android:hint="Address"
+                android:background="@drawable/rounded_edittext"
                 android:inputType="textMultiLine"/>
             <EditText
                 android:id="@+id/kycdetails_edittext"
@@ -120,6 +128,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:hint="KYC Details"/>
             <EditText
                 android:id="@+id/lat_edittext"
@@ -129,6 +138,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:hint="Latitude Of The Location"/>
 
             <EditText
@@ -139,6 +149,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
                 android:hint="Longitude Of The Location"/>
 
             <Button

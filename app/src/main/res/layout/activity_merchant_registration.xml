@@ -42,6 +42,7 @@
         android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
         android:hint="Merchant Name"/>
     <EditText
         android:id="@+id/merchantkey_edittext"
@@ -51,6 +52,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
         android:digits="abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"
         android:hint="Merchant Key"/>
 
@@ -82,7 +84,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
-        android:hint="Account Name"/>
+        android:hint="Account Name"
+                android:background="@drawable/rounded_edittext"
+                />
     <EditText
         android:id="@+id/ifsccode_edittext"
         android:layout_width="match_parent"
@@ -91,6 +95,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
         android:hint="IFSC Code"/>
     <EditText
         android:id="@+id/accountnumber_edittext"
@@ -100,6 +105,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
         android:hint="Account Number"
         android:digits="1234567890"/>
     <EditText
@@ -111,6 +117,7 @@
         android:layout_marginRight="10dp"
         android:textAlignment="center"
         android:hint="Address"
+        android:background="@drawable/rounded_edittext"
         android:inputType="textMultiLine"/>
     <EditText
         android:id="@+id/kycdetails_edittext"
@@ -120,6 +127,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
         android:hint="KYC Details"/>
     <Button
         android:id="@+id/latlong_button"
@@ -131,6 +139,7 @@
         android:textAlignment="center"
         android:text="Get latitude and longitude"
         android:background="@color/colorButton"
+
         android:textColor="#FFFFFF"
         android:onClick="onClickGetlatitudelongitudebutton"/>
     <Button
