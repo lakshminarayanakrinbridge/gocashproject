@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/layout_one"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="40dp"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -98,23 +98,10 @@
             android:text="User_1"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/layout_five"
-        android:orientation="vertical"
-        android:layout_below="@+id/layout_four"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-  <!--      <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Edit"
-            android:onClick="onClickEditTerminal"/> -->
 
-    </LinearLayout>
     <View
         android:id="@+id/view1"
-        android:layout_below="@+id/layout_five"
+        android:layout_below="@+id/layout_four"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000"
@@ -125,6 +112,6 @@
 
 
 
-</RelativeLayout>
+</LinearLayout>
 
 
