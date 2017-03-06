@@ -95,6 +95,8 @@ public class LoginActivity extends AppCompatActivity {
                             String str11=null;
                             String str13=null;
                             String str12="false";
+                            String str14=null;
+                            String str15=null;
 
 
                             try {
@@ -138,6 +140,8 @@ public class LoginActivity extends AppCompatActivity {
                                     str9 = jsonObject1.getString("kyc_details");
                                     str10 = jsonObject1.getString("m_name");
                                     str11 =jsonObject1.getString("m_code");
+                                    str14=jsonObject1.getString("mobile_no");
+                                    str15=jsonObject1.getString("email");
                                     /*
                                     str13=jsonObject1.getString("m_email");
                                     str14=jsonObject1.getString("m_mobile");
@@ -166,8 +170,8 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
                                 editor.putString(Config.USERNAME_SHARED_PREF, username);
                                 editor.putString(Config.KEY_MERCHANTID, str);
-                                editor.putString(Config.MOBILENUMBER_SHARED_PREF, username);
-                                editor.putString(Config.EMAILID_SHARED_PREF, "emailid");
+                                editor.putString(Config.MOBILENUMBER_SHARED_PREF, str14);
+                                editor.putString(Config.EMAILID_SHARED_PREF, str15);
                                 editor.putString(Config.MERCHANT_CODE_SHARED_PREF,str11);
 
 

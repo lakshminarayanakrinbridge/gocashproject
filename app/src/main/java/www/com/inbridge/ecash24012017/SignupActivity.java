@@ -85,21 +85,22 @@ public class SignupActivity extends AppCompatActivity {
 
                             try {
                                 JSONObject jsonObject=new JSONObject(response);
+                                user_msg=jsonObject.getString("user_msg");
 
                             }
                             catch (JSONException e)
                             {
                                 Toast.makeText(getApplicationContext(),"Developer Exception While Json Object",Toast.LENGTH_LONG).show();
                             }
-                            if (response.equalsIgnoreCase(Config.LOGIN_FAILURE1)) {
+                            if (user_msg.equalsIgnoreCase(Config.LOGIN_FAILURE1)) {
                                 //If the server response is not success
                                 //Displaying an error message on toast
                                 Toast.makeText(SignupActivity.this, Config.LOGIN_FAILURE1 + mobilenumber1, Toast.LENGTH_SHORT).show();
-                            } else if (response.equalsIgnoreCase(Config.LOGIN_FAILURE2)) {
+                            } else if (user_msg.equalsIgnoreCase(Config.LOGIN_FAILURE2)) {
                                 Toast.makeText(SignupActivity.this, "Check Your Network Connection", Toast.LENGTH_SHORT).show();
-                            } else if (response.equalsIgnoreCase(Config.LOGIN_FAILURE3)) {
+                            } else if (user_msg.equalsIgnoreCase(Config.LOGIN_FAILURE3)) {
                                 Toast.makeText(SignupActivity.this, Config.LOGIN_FAILURE3, Toast.LENGTH_SHORT).show();
-                            } else if (response.equalsIgnoreCase(Config.LOGIN_FAILURE4)) {
+                            } else if (user_msg.equalsIgnoreCase(Config.LOGIN_FAILURE4)) {
                                 Toast.makeText(SignupActivity.this, Config.LOGIN_FAILURE4, Toast.LENGTH_SHORT).show();
                             } else {
                                 //json parsing

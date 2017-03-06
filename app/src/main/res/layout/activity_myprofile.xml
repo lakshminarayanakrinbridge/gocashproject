@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_myprofile"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="www.com.inbridge.ecash24012017.MyprofileActivity">
     <TextView
@@ -24,90 +24,187 @@
         android:orientation="vertical"
         android:layout_marginLeft="30dp"
         android:gravity="left">
-        <TextView
+        <LinearLayout
             android:layout_marginTop="10dp"
-            android:id="@+id/mcategory_textview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Category"
-            android:textSize="18dp"
-            />
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CATEGORY:"/>
+
+            <TextView
+
+                android:id="@+id/mcategory_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER_CATEGORY"
+                />
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="MERCHANT NAME:"/>
         <TextView
-            android:layout_marginTop="20dp"
+
             android:id="@+id/mname_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Merchant Name"
-           android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/mkey_edittext"
-            android:layout_width="wrap_content"
+           />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Merchant Key"
-            android:textSize="18dp"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERCHANT KEY:"/>
+            <TextView
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/memail_textview"
-            android:layout_width="wrap_content"
+                android:id="@+id/mkey_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merchant Key"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-Mail Id"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/mmobile_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERCHANT E-MAIL:"/>
+            <TextView
+
+                android:id="@+id/memail_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merchant E-mail"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile Number"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/maccountname_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" MOBILE NUMBER:"/>
+            <TextView
+
+                android:id="@+id/mmobile_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Account Name"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/maccountnumber_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT NAME:"/>
+            <TextView
+
+                android:id="@+id/maccountname_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Name"
+                />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Account Number"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/maddress_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT NUMBER:"/>
+            <TextView
+
+                android:id="@+id/maccountnumber_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Address"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/mifsc_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS:"/>
+            <TextView
+
+                android:id="@+id/maddress_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="IFSC Code"
-            android:textSize="18dp"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/mkyc_textview"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IFSC CODE:"/>
+            <TextView
+
+                android:id="@+id/mifsc_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IFSC Code"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="KYC Details"
-            android:textSize="18dp"
-            android:layout_marginBottom="10dp"/>
-</LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KYC DETAILS:"/>
+            <TextView
+
+                android:id="@+id/mkyc_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KYC Details"
+                />
+        </LinearLayout>
+
         <Button
             android:layout_marginTop="20dp"
             android:id="@+id/edit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="EDIT"
+            android:layout_marginRight="30dp"
             android:background="@color/colorButton"
             android:textColor="#FFFFFF"
             android:onClick="onClickEditMerchantButton"/>
@@ -121,6 +218,7 @@
             android:text="Ok"
             android:background="@color/colorButton"
             android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
             android:onClick="onClickOkButton"/>
 
 

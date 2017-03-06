@@ -146,6 +146,9 @@ public class AdminActivity extends AppCompatActivity
             case R.id.nav_searchmerchant:
                     fragment=new SearchMerchantFragment();
                 break;
+            case R.id.nav_changepassword:
+                fragment=new ChangePasswordFragment();
+                break;
         }
 
         //replacing the fragment

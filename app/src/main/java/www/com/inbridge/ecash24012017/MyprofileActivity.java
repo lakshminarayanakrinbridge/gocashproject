@@ -21,7 +21,7 @@ public class MyprofileActivity extends AppCompatActivity {
 
         TextView mcategoryname=(TextView) findViewById(R.id.mcategory_textview);
         TextView mname=(TextView) findViewById(R.id.mname_textview);
-        TextView mkey=(TextView) findViewById(R.id.mkey_edittext);
+        TextView mkey=(TextView) findViewById(R.id.mkey_textview);
         TextView memail=(TextView) findViewById(R.id.memail_textview);
         TextView mmobile=(TextView) findViewById(R.id.mmobile_textview);
         TextView mifsc=(TextView) findViewById(R.id.mifsc_textview);
