@@ -112,99 +112,96 @@ public class LoginActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
 
-                            if (str12.equalsIgnoreCase(Config.LOGIN_SUCCESS)){
+                            if (str12.equalsIgnoreCase(Config.LOGIN_SUCCESS)) {
 
 
-                            try
-                            {
-                                JSONObject jsonObject1 = new JSONObject(response);
-                                str11=jsonObject1.getString("user_role");
-                            }
-                            catch (JSONException e)
-                            {
-                                e.printStackTrace();
-                                progressBar.setVisibility(View.GONE);
-                                Toast.makeText(getApplicationContext(),"Developer Exception 1",Toast.LENGTH_LONG).show();
-                            }
-
-                            if(str11.equals("merchant")) {
                                 try {
                                     JSONObject jsonObject1 = new JSONObject(response);
+                                    str11 = jsonObject1.getString("user_role");
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                    progressBar.setVisibility(View.GONE);
+                                    Toast.makeText(getApplicationContext(), "Developer Exception 1", Toast.LENGTH_LONG).show();
+                                }
 
-                                    str = jsonObject1.getString("m_id");
-                                    str4 = jsonObject1.getString("m_key");
-                                    str5 = jsonObject1.getString("m_acc_name");
-                                    str6 = jsonObject1.getString("m_account_no");
-                                    str7 = jsonObject1.getString("m_ifsc_code");
-                                    str8 = jsonObject1.getString("m_address");
-                                    str9 = jsonObject1.getString("kyc_details");
-                                    str10 = jsonObject1.getString("m_name");
-                                    str11 =jsonObject1.getString("m_code");
-                                    str14=jsonObject1.getString("mobile_no");
-                                    str15=jsonObject1.getString("email");
+                                if (str11.equals("merchant")) {
+                                    try {
+                                        JSONObject jsonObject1 = new JSONObject(response);
+
+                                        str = jsonObject1.getString("m_id");
+                                        str4 = jsonObject1.getString("m_key");
+                                        str5 = jsonObject1.getString("m_acc_name");
+                                        str6 = jsonObject1.getString("m_account_no");
+                                        str7 = jsonObject1.getString("m_ifsc_code");
+                                        str8 = jsonObject1.getString("m_address");
+                                        str9 = jsonObject1.getString("kyc_details");
+                                        str10 = jsonObject1.getString("m_name");
+                                        str11 = jsonObject1.getString("m_code");
+                                        str14 = jsonObject1.getString("mobile_no");
+                                        str15 = jsonObject1.getString("email");
                                     /*
                                     str13=jsonObject1.getString("m_email");
                                     str14=jsonObject1.getString("m_mobile");
                                     */
 
 
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), "Developer Exception at json parsing", Toast.LENGTH_LONG).show();
-                                }
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                        Toast.makeText(getApplicationContext(), "Developer Exception at json parsing", Toast.LENGTH_LONG).show();
+                                    }
 
-                                //If we are getting success from server
+                                    //If we are getting success from server
 
-                                SharedPreferences sharedPreferences = LoginActivity.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                                Toast.makeText(LoginActivity.this, str7, Toast.LENGTH_LONG).show();
-                                Toast.makeText(LoginActivity.this, str, Toast.LENGTH_LONG).show();
-                                //Creating editor to store values to shared preferences
-                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                editor.putString(Config.MERCHANT_KEY_SHARED_PREF, str4);
-                                editor.putString(Config.ACCOUNT_NAME_SHARED_PREF, str5);
-                                editor.putString(Config.ACCOUNT_NUMBER_SHARED_PREF, str6);
-                                editor.putString(Config.IFSCCODE_SHARED_PREF, str7);
-                                editor.putString(Config.ADDRESS_SHARED_PREF, str8);
-                                editor.putString(Config.KYCDETAILS_SHARED_PREF, str9);
-                                editor.putString(Config.MERCHANT_NAME_SHARED_PREF, str10);
-                                editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
-                                editor.putString(Config.USERNAME_SHARED_PREF, username);
-                                editor.putString(Config.KEY_MERCHANTID, str);
-                                editor.putString(Config.MOBILENUMBER_SHARED_PREF, str14);
-                                editor.putString(Config.EMAILID_SHARED_PREF, str15);
-                                editor.putString(Config.MERCHANT_CODE_SHARED_PREF,str11);
+                                    SharedPreferences sharedPreferences = LoginActivity.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                                    Toast.makeText(LoginActivity.this, str7, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(LoginActivity.this, str, Toast.LENGTH_LONG).show();
+                                    //Creating editor to store values to shared preferences
+                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                    editor.putString(Config.MERCHANT_KEY_SHARED_PREF, str4);
+                                    editor.putString(Config.ACCOUNT_NAME_SHARED_PREF, str5);
+                                    editor.putString(Config.ACCOUNT_NUMBER_SHARED_PREF, str6);
+                                    editor.putString(Config.IFSCCODE_SHARED_PREF, str7);
+                                    editor.putString(Config.ADDRESS_SHARED_PREF, str8);
+                                    editor.putString(Config.KYCDETAILS_SHARED_PREF, str9);
+                                    editor.putString(Config.MERCHANT_NAME_SHARED_PREF, str10);
+                                    editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
+                                    editor.putString(Config.USERNAME_SHARED_PREF, username);
+                                    editor.putString(Config.KEY_MERCHANTID, str);
+                                    editor.putString(Config.MOBILENUMBER_SHARED_PREF, str14);
+                                    editor.putString(Config.EMAILID_SHARED_PREF, str15);
+                                    editor.putString(Config.MERCHANT_CODE_SHARED_PREF, str11);
 
 
-                                //Saving values to editor
-                                editor.commit();
-                                // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.USERNAME_SHARED_PREF,"username"),Toast.LENGTH_LONG).show();
-                                // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.ACCOUNT_NAME_SHARED_PREF,"aname"),Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
-                                progressBar.setVisibility(View.GONE);
-                                startActivity(intent);
-                                finish();
-                            }
-                                else // if(str11.equals("admin"))
-                            {
-
+                                    //Saving values to editor
+                                    editor.commit();
+                                    // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.USERNAME_SHARED_PREF,"username"),Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(LoginActivity.this,sharedPreferences.getString(Config.ACCOUNT_NAME_SHARED_PREF,"aname"),Toast.LENGTH_LONG).show();
+                                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                                    progressBar.setVisibility(View.GONE);
+                                    startActivity(intent);
+                                    finish();
+                                } else if (str11.equals("admin")) {
 
 
                                     Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
-                                progressBar.setVisibility(View.GONE);
+                                    progressBar.setVisibility(View.GONE);
                                     startActivity(intent);
                                     finish();
 
 
+                                } else if (str11.equals("terminal")) {
+
+                                    Intent i=new Intent(LoginActivity.this,TerminalLoginActivity.class);
+                                    progressBar.setVisibility(View.GONE);
+                                    startActivity(i);
+                                    finish();
+
+                                } else {
+                                    //If the server response is not success
+                                    //Displaying an error message on toast
+                                    Toast.makeText(LoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                                    progressBar.setVisibility(View.INVISIBLE);
                                 }
-
-
-                            }
-                            else
-                            {
-                                //If the server response is not success
-                                //Displaying an error message on toast
-                                Toast.makeText(LoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
-                                progressBar.setVisibility(View.INVISIBLE);
                             }
                             //Starting profile activity
 
