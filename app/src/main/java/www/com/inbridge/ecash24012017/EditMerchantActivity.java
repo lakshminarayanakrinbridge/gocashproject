@@ -97,21 +97,20 @@ public class EditMerchantActivity extends AppCompatActivity {
         } else if (kycdetailseEdittext.getText().toString().trim().equals("")) {
             kycdetailseEdittext.setError("KYC details  is required!");
             kycdetailseEdittext.setHint("please enter KYC details");
-        }   else {
+        } else {
 
 
             StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.EDIT_MERCHANT_URL,
                     new Response.Listener<String>() {
                         JSONObject obj;
                         String str2;
+
                         @Override
                         public void onResponse(String response) {
                             try {
-                                 obj = new JSONObject(response);
-                                str2=obj.getString("user_msg");
-                            }
-                            catch (JSONException e)
-                            {
+                                obj = new JSONObject(response);
+                                str2 = obj.getString("user_msg");
+                            } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                             //If we are getting success from server
@@ -175,7 +174,7 @@ public class EditMerchantActivity extends AppCompatActivity {
                     params.put("m_ifsc_code", ifsccode);
                     params.put("m_address", address);
                     params.put("kyc_details", kycdetails);
-                    params.put("m_id", sharedPreferences.getString(Config.KEY_MERCHANTID,"m_id"));
+                    params.put("m_id", sharedPreferences.getString(Config.KEY_MERCHANTID, "m_id"));
 
 
                     //returning parameter
@@ -188,8 +187,19 @@ public class EditMerchantActivity extends AppCompatActivity {
             requestQueue.add(stringRequest);
         }
 
+    }
 
-        }
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(EditMerchantActivity.this,MyprofileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
 
 
     }

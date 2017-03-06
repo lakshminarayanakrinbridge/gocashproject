@@ -71,6 +71,7 @@ public class MyprofileActivity extends AppCompatActivity {
 
                         //Starting login activity
                         Intent intent = new Intent(MyprofileActivity.this, LoginActivity.class);
+                        finish();
                         startActivity(intent);
                     }
                 });
@@ -119,6 +120,15 @@ public class MyprofileActivity extends AppCompatActivity {
         onBackPressed();
     }
 
+    @Override
+    public void onBackPressed()
+    {
 
+        Intent i=new Intent(MyprofileActivity.this,ProfileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
 
 }

@@ -169,10 +169,22 @@ public class TerminalActivity extends AppCompatActivity {
     {
         Intent i=new Intent(TerminalActivity.this,CreateTerminalAdmin.class);
         startActivity(i);
+        finish();
 
 
     }
 
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(TerminalActivity.this,ProfileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
 
 
 

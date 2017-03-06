@@ -244,6 +244,14 @@ public class LoginActivity extends AppCompatActivity {
         // Toast.makeText(LoginActivity.this, "forgot password clicked", Toast.LENGTH_SHORT).show();
 
     }
+    @Override
+    public void onBackPressed()
+    {
+
+        LoginActivity.this.finish();
+        System.exit(0);
+
+    }
 }
 
 

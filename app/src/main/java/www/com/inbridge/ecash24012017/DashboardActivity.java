@@ -80,4 +80,15 @@ public class DashboardActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(DashboardActivity.this,ProfileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
 }

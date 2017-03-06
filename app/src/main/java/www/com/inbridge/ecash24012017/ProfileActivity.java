@@ -105,6 +105,7 @@ public class ProfileActivity extends AppCompatActivity {
     {
        Intent i=new Intent(ProfileActivity.this,DashboardActivity.class);
         startActivity(i);
+        finish();
 
 
 
@@ -114,18 +115,35 @@ public class ProfileActivity extends AppCompatActivity {
     {
         Intent i=new Intent(ProfileActivity.this,TerminalActivity.class);
         startActivity(i);
+        finish();
+
     }
 
     public void onClickMyprofileButton(View v)
     {
         Intent i=new Intent(ProfileActivity.this,MyprofileActivity.class);
         startActivity(i);
+        finish();
+
     }
 
-    public void onClickEditterminalButton(View v)
-    {
-        Intent i=new Intent(ProfileActivity.this,EditTerminalActivity.class);
+    public void onClickEditterminalButton(View v) {
+        Intent i = new Intent(ProfileActivity.this, EditTerminalActivity.class);
         startActivity(i);
+        finish();
+
+
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(ProfileActivity.this,LoginActivity.class);
+        finish();
+        startActivity(i);
+
 
     }
 

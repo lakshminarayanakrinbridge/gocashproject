@@ -136,4 +136,15 @@ public class CreateTerminalAdmin extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(CreateTerminalAdmin.this,ProfileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
 }

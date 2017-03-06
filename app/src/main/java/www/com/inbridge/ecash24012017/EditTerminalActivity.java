@@ -121,5 +121,18 @@ public class EditTerminalActivity extends AppCompatActivity {
         onBackPressed();
     }
 
+    @Override
+    public void onBackPressed()
+    {
+
+        super.onBackPressed();
+        Intent i=new Intent(EditTerminalActivity.this,ProfileActivity.class);
+        finish();
+        startActivity(i);
+
+
+    }
+
+
 }
 
