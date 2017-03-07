@@ -196,9 +196,10 @@ public class MerchantRegistrationActivity extends AppCompatActivity {
         EditText accountnumberEdittext = (EditText) findViewById(R.id.accountnumber_edittext);
         EditText addressEdittext = (EditText) findViewById(R.id.address_edittext);
         EditText kycdetailseEdittext = (EditText) findViewById(R.id.kycdetails_edittext);
-
-
-        if (merchantnameEdittext.getText().toString().trim().equals("")) {
+        if(Long.toString(category_id).equals("0"))
+        {
+            Toast.makeText(getApplicationContext(),"Please Select the Appropriate Category",Toast.LENGTH_LONG).show();
+        }else if (merchantnameEdittext.getText().toString().trim().equals("")) {
             merchantnameEdittext.setError("Merchant Name is required!");
 
             merchantnameEdittext.setHint("please enter Merchant Name");

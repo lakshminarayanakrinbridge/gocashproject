@@ -77,9 +77,9 @@ public class CreateTerminal extends AppCompatActivity {
     {
 
         super.onBackPressed();
-        Intent i=new Intent(CreateTerminal.this,TerminalActivity.class);
+
         finish();
-        startActivity(i);
+
 
 
     }
