@@ -35,7 +35,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="category"
                 android:textAlignment="center"
                 android:textSize="18sp"
@@ -48,7 +47,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:digits="abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ"
                 android:hint="Merchant Key"
                 android:textAlignment="center" />
@@ -60,7 +58,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:text="E-mail Id"
                 android:textAlignment="center"
                 android:textSize="18sp"
@@ -73,7 +70,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="Merchant Name"
                 android:textAlignment="center" />
 
@@ -84,7 +80,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:digits="1234567890"
                 android:hint="Account Number"
                 android:textAlignment="center" />
@@ -96,7 +91,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:text="Mobile Number"
                 android:textAlignment="center"
                 android:textSize="18sp"
@@ -110,7 +104,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="Account Name"
                 android:textAlignment="center"
                 android:textSize="20dp" />
@@ -122,7 +115,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="IFSC Code"
                 android:textAlignment="center" />
 
@@ -134,7 +126,6 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1.05"
-                android:background="@drawable/rounded_edittext"
                 android:hint="E-Cash Balance"
                 android:textAlignment="center" />
 
@@ -145,7 +136,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="E - CashBack Balance"
                 android:textAlignment="center" />
 
@@ -156,7 +146,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="Address"
                 android:inputType="textMultiLine"
                 android:textAlignment="center" />
@@ -168,7 +157,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="Latitude"
                 android:textAlignment="center" />
 
@@ -179,7 +167,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:hint="Longitude"
                 android:textAlignment="center" />
 
@@ -201,7 +188,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_edittext"
                 android:text="Approved Status"
                 android:textAlignment="center"
                 android:textSize="18sp"

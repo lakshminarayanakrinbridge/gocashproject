@@ -24,7 +24,6 @@
         android:layout_marginTop="70dp"
         android:hint="Mobile Number"
         android:gravity="center"
-        android:background="@drawable/rounded_edittext"
         android:maxLength="10"
         android:digits="1234567890"
         />
@@ -37,7 +36,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="40dp"
         android:hint="E-mail Id"
-        android:background="@drawable/rounded_edittext"
         android:gravity="center"
 
         />

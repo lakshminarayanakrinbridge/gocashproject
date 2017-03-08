@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="www.com.inbridge.ecash24012017.LoginActivity">
-
     <ImageView
         android:id="@+id/ecashlogo_imageview"
         android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_height="50dp"
         android:src="@drawable/ecashlogo"
         android:layout_gravity="center"
@@ -27,7 +26,6 @@
         android:textAppearance="?android:textAppearanceLarge"
         android:hint="User Name"
         android:maxLength="10"
-        android:background="@drawable/rounded_edittext"
         android:digits="1234567890"
         />
     <EditText
@@ -41,7 +39,7 @@
         android:hint="Password"
         android:textAppearance="?android:textAppearanceLarge"
         android:inputType="textPassword"
-        android:background="@drawable/rounded_edittext"
+
         />
 
     <TextView

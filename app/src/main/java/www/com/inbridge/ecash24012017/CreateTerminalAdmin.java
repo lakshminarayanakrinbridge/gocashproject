@@ -131,7 +131,7 @@ public class CreateTerminalAdmin extends AppCompatActivity {
             RequestQueue requestQueue = Volley.newRequestQueue(this);
             requestQueue.add(stringRequest);
 
-
+            onBackPressed();
         }
 
 
@@ -147,4 +147,6 @@ public class CreateTerminalAdmin extends AppCompatActivity {
 
 
     }
+
+
 }
